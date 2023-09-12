@@ -1,0 +1,326 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>MCM: Mobile Car Mechanics</title>
+    <meta name="description" content="Bootstrap Metro Dashboard">
+    <meta name="author" content="Dennis Ji">
+    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end: Mobile Specific -->
+    <!-- start: CSS -->
+    <%--     <!-- Bootsrap -->
+        <link rel="stylesheet" href="css/bootstrap1.min.css">
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="css/font-awesome1.min.css">
+
+        <!-- Owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel1.css">
+
+        <!-- Template main Css -->
+        <link rel="stylesheet" href="css/style1.css">
+        
+        <!-- Modernizr -->
+        <script src="js/modernizr-2.6.2.min1.js"></script>--%>
+    <link id="bootstrapstyle" href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link id="basestyle" href="css/style.css" rel="stylesheet">
+    <link id="basestyleresponsive" href="css/style-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext'
+        rel='stylesheet' type='text/css'>
+    <!-- end: CSS -->
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link id="iestyle" href="css/ie.css" rel="stylesheet">
+	<![endif]-->
+    <!--[if IE 9]>
+		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
+	<![endif]-->
+    <!-- start: Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- end: Favicon -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form runat="server" id="form1">
+    <!-- start: Header -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span></a><a class="brand" href="#"><span>MCM</span></a>
+                    </span></a>
+                <!-- start: Header Menu -->
+                <div class="nav-no-collapse header-nav">
+                    <ul class="nav pull-right">
+                        <li class="dropdown hidden-phone" id="mechanicnoti"
+                            runat="server" visible="false"><a class="btn dropdown-toggle" data-toggle="dropdown"
+                                href="#"><i class="icon-share-alt"></i></a>
+                            <ul class="dropdown-menu notifications">
+                                <li class="dropdown-menu-title"><span>You have
+                                    <asp:Literal ID="ltCount" runat="server"></asp:Literal>
+                                    Notification</span> <a href="#refresh"><i class="icon-repeat"></i></a></li>
+                                <asp:Repeater ID="Repeater1" runat="server">
+                                    <ItemTemplate>
+                                        <li><a href="OutstandingRequest.aspx"><span class="icon blue"><i class="icon-user"></i>
+                                        </span><span class="message">
+                                            <%# Eval("VehicleNumber")%></span> <span class="time">
+                                                <%# Eval("RequestTime", "{0:dd-MM-yyyy HH:mm}")%></span> </a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>
+                        </li>
+                        <%-- <li class="dropdown hidden-phone"><a class="btn dropdown-toggle" data-toggle="dropdown"
+                            href="#"><i class="icon-share-alt"></i></a>
+                            <ul class="dropdown-menu notifications">
+                                <li class="dropdown-menu-title"><span>You have
+                                    <asp:Literal ID="ltCountcustomer" runat="server"></asp:Literal>
+                                    Notification</span> <a href="#refresh"><i class="icon-repeat"></i></a></li>
+                                
+                            </ul>
+                        </li>--%>
+                        <!-- start: User Dropdown -->
+                        <li class="dropdown"><a class="btn dropdown-toggle"
+                            data-toggle="dropdown" href="#"><i class="halflings-icon white user"></i>
+                            <asp:Label ID="lblName" runat="server" />
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li id="logoutmenu" runat="server"><a href="CustomerLogin.aspx"><i class="halflings-icon off">
+                                </i>Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- end: User Dropdown -->
+                    </ul>
+                </div>
+                <!-- end: Header Menu -->
+            </div>
+        </div>
+    </div>
+    <!-- start: Header -->
+    <div class="container-fluid-full">
+        <div class="row-fluid">
+            <!-- start: Main Menu -->
+            <div id="sidebar-left" class="span2">
+                <div class="nav-collapse sidebar-nav">
+                    <ul class="nav nav-tabs nav-stacked main-menu" id="menucustomer" runat="server">
+                        <li><a href="CustomerHome.aspx"><i class="icon-home"></i><span class="hidden-tablet">
+                            Home</span></a></li>
+                        <li><a href="CustomerViewProfile.aspx"><i class="icon-eye-open"></i><span class="hidden-tablet">
+                            View Profile</span></a></li>
+                        <li><a href="CustomerProfile.aspx"><i class="icon-user"></i><span class="hidden-tablet">
+                            Edit Profile</span></a></li>
+                        <li><a href="Customer_SearchService.aspx"><i class="icon-wrench"></i><span class="hidden-tablet">
+                            Services</span></a></li>
+                        <li><a href="Customer_MyRequest.aspx"><i class="icon-eye-open"></i><span class="hidden-tablet">
+                            View Request</span></a></li>
+                        <li><a class="dropmenu" href="#"><i class="icon-truck"></i><span class="hidden-tablet">
+                            Vehicle </span><span class="label label-important"></span></a>
+                            <ul>
+                                <li><a class="submenu" href="MyVehicle.aspx"><i class="icon-eye-open"></i><span class="hidden-tablet">
+                                    Add Vehicle </span></a></li>
+                                <li><a class="submenu" href="MyVehicleUpdate.aspx"><i class="icon-edit"></i><span
+                                    class="hidden-tablet">Update Vehicle </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="CustomerLogin.aspx"><i class="icon-lock"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Logout </span></a></li>
+                    </ul>
+                    <ul class="nav nav-tabs nav-stacked main-menu" id="menumechanic" runat="server">
+                        <li><a href="MechanicHome.aspx"><i class="icon-home"></i><span class="hidden-tablet">
+                            Home</span></a></li>
+                        <li><a href="MechanicViewProfile.aspx"><i class="icon-eye-open"></i><span class="hidden-tablet">
+                            View Profile</span></a></li>
+                        <li><a href="MechanicProfile.aspx"><i class="icon-user"></i><span class="hidden-tablet">
+                            Edit Profile</span></a></li>
+                        <li><a class="dropmenu" href="#"><i class="icon-share-alt"></i><span class="hidden-tablet">
+                            Requests</span><span class="label label-important"></span></a>
+                            <ul>
+                                <li><a class="submenu" href="OutstandingRequest.aspx"><i class="icon-share"></i><span
+                                    class="hidden-tablet">Outstanding Requests</span></a></li>
+                                <li><a class="submenu" href="PastRequest.aspx"><i class="icon-ok-sign"></i><span
+                                    class="hidden-tablet">Past Requests</span></a></li>
+                                <li><a class="submenu" href="TodaysCalendar.aspx"><i class="icon-calendar"></i><span
+                                    class="hidden-tablet">Today's Calender</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="CustomerLogin.aspx"><i class="icon-lock"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Logout</span></a></li>
+                    </ul>
+                    <ul class="nav nav-tabs nav-stacked main-menu" id="menuadmin" runat="server">
+                        <li><a href="AdminHome.aspx"><i class="icon-home"></i><span class="hidden-tablet">Home</span></a></li>
+                        <li><a href="AreaDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">Add
+                            New Area</span></a></li>
+                        <li><a href="AreaSearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Area Search</span></a></li>
+                        <li><a href="CityDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">Add
+                            New City</span></a></li>
+                        <li><a href="CitySearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            City Search</span></a></li>
+                        <li><a href="CustomerDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Customer</span></a></li>
+                        <li><a href="CustomerSearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Customer Search</span></a></li>
+                        <li><a href="MechanicSearch.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Mechanic</span></a></li>
+                        <li><a href="MechanicDetail.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Mechanic Search</span></a></li>
+                        <li><a href="ServiceCategoryDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Category</span></a></li>
+                        <li><a href="ServiceCategorySearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Category Search</span></a></li>
+                        <li><a href="ServiceRequestDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Service</span></a></li>
+                        <li><a href="ServiceCategorySearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Service Search</span></a></li>
+                        <li><a href="ServiceRequestDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Request</span></a></li>
+                        <li><a href="ServiceRequestSearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Request Search</span></a></li>
+                        <li><a href="VehicleDetail.aspx"><i class="icon-plus"></i><span class="hidden-tablet">
+                            Add New Vehicle</span></a></li>
+                        <li><a href="VehicleSearch.aspx"><i class="icon-search"></i><span class="hidden-tablet">
+                            Vehicle Search</span></a></li>
+                        <li><a href="CustomerLogin.aspx"><i class="icon-lock"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Logout</span></a></li>
+                    </ul>
+                    <ul class="nav nav-tabs nav-stacked main-menu" id="menuGuest" runat="server">
+                        <li><a href="Home.aspx"><i class="icon-home"></i><span class="hidden-tablet">Home</span></a></li>
+                        <li><a href="AboutUs.aspx"><i class="icon-info-sign"></i><span class="hidden-tablet">
+                            About Us</span></a></li>
+                        <li><a href="Services.aspx"><i class="icon-wrench"></i><span class="hidden-tablet">Services</span></a></li>
+                        <li><a href="ContactUs.aspx"><i class="icon-envelope-alt"></i><span class="hidden-tablet">
+                            Contact Us</span></a></li>
+                        <li><a href="CustomerLogin.aspx"><i class="icon-lock"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Login</span></a></li>
+                        <li><a href="CustomerRegistration.aspx"><i class="icon-edit"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Register as Customer</span></a></li>
+                        <li><a href="MechanicRegistration.aspx"><i class="icon-edit"></i><span class="hidden-tablet"
+                            onclick="Click_logout">Register as Mechanic</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end: Main Menu -->
+            <noscript>
+                <div class="alert alert-block span10">
+                    <h4 class="alert-heading">
+                        Warning!</h4>
+                    <p>
+                        You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                        enabled to use this site.</p>
+                </div>
+            </noscript>
+            <!-- start: Content -->
+            <div id="content" class="span10">
+                <ul class="breadcrumb">
+                    <li><strong><i class="icon-home"></i><a href="Home.aspx">Home</a> <i class="icon-angle-right">
+                    </i></strong></li>
+                    <li><strong><i class="icon-info-sign"></i><a href="AboutUs.aspx">About Us</a> <i
+                        class="icon-angle-right"></i></strong></li>
+                    <li><strong><i class="icon-wrench"></i><a href="Services.aspx">Services</a> <i class="icon-angle-right">
+                    </i></strong></li>
+                    <%--<li class="dropdown">
+							<a  data-toggle="dropdown" href="#">
+								<i class="icon-user"></i>
+                                Users Corner
+								<span class="caret"></span>
+							</a>
+					        <i class="icon-angle-right"></i>
+							<ul class="dropdown-menu">
+								<li><a href="CustomerLogin.aspx"><i class="icon user"></i>User Login</a></li>
+								<li><a href="CustomerRegistration.aspx"><i class="icon user"></i>Customer Registration</a></li>
+								<li><a href="MechanicRegistration.aspx"><i class="icon user"></i>Mechanic Registration</a></li>
+				            </ul>
+						</li>--%>
+                    <li><strong><i class="icon-envelope-alt"></i><a href="ContactUs.aspx">Contact Us</a>
+                        <i class="icon-angle-right"></i></strong></li>
+                </ul>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--/row-->
+            </div>
+            <!--/.fluid-container-->
+            <!-- end: Content -->
+        </div>
+        <!--/#content.span10-->
+    </div>
+    <!--/fluid-row-->
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                ×</button>
+            <h3>
+                Settings</h3>
+        </div>
+        <div class="modal-body">
+            <p>
+                Here settings can be configured...</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Close</a> <a href="#" class="btn btn-primary">
+                Save changes</a>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <footer>
+
+		<p>
+			<span style="text-align:left;float:left">&copy; 2023 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard"> MCM: Mobile Car Mechanics</a></span>
+			
+		</p>
+
+	</footer>
+    <!-- start: JavaScript-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-migrate-1.0.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src='js/fullcalendar.min.js'></script>
+    <script src='js/jquery.dataTables.min.js'></script>
+    <script src="js/excanvas.js"></script>
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.pie.js"></script>
+    <script src="js/jquery.flot.stack.js"></script>
+    <script src="js/jquery.flot.resize.min.js"></script>
+    <script src="js/jquery.chosen.min.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/jquery.cleditor.min.js"></script>
+    <script src="js/jquery.noty.js"></script>
+    <script src="js/jquery.elfinder.min.js"></script>
+    <script src="js/jquery.raty.min.js"></script>
+    <script src="js/jquery.iphone.toggle.js"></script>
+    <script src="js/jquery.uploadify-3.1.min.js"></script>
+    <script src="js/jquery.gritter.min.js"></script>
+    <script src="js/jquery.imagesloaded.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.knob.modified.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/custom.js"></script>
+    <%--
+    <!-- Bootsrap javascript file -->
+    <script src="assets/js/bootstrap.min1.js"></script>
+    
+    <!-- owl carouseljavascript file -->
+    <script src="assets/js/owl.carousel.min1.js"></script>
+
+    <!-- Template main javascript -->
+    <script src="assets/js/main1.js"></script>--%>
+    <!-- end: JavaScript-->
+    </form>
+</body>
+</html>

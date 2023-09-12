@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{5E3F0248-6909-40CF-81CF-30F49B63B00D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MobileCarMechanics", "MobileCarMechanics\", "{AD898190-3C87-4D28-8BCE-993C5368EBB2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{5E3F0248-6909-40CF-81CF-30F49B63B00D}|LogicLayer.dll;{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}|DataAccessLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MobileCarMechanics"
+		Debug.AspNetCompiler.PhysicalPath = "MobileCarMechanics\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MobileCarMechanics\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MobileCarMechanics"
+		Release.AspNetCompiler.PhysicalPath = "MobileCarMechanics\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MobileCarMechanics\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63273"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E3F0248-6909-40CF-81CF-30F49B63B00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3F0248-6909-40CF-81CF-30F49B63B00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3F0248-6909-40CF-81CF-30F49B63B00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3F0248-6909-40CF-81CF-30F49B63B00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC491A69-4FC5-4937-90F0-1EC6AD9CD38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD898190-3C87-4D28-8BCE-993C5368EBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD898190-3C87-4D28-8BCE-993C5368EBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD898190-3C87-4D28-8BCE-993C5368EBB2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD898190-3C87-4D28-8BCE-993C5368EBB2}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

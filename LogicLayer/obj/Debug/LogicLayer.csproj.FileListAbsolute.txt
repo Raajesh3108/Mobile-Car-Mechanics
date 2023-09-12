@@ -1,0 +1,37 @@
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\Mr.Bhubham\documents\visual studio 2010\Projects\MCM\LogicLayer\obj\Debug\LogicLayer.pdb
+G:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.dll
+G:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.pdb
+G:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.dll
+G:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.pdb
+G:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+G:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.dll
+G:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.pdb
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.dll
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.pdb
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.dll
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.dll
+D:\Software\New folder\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.pdb
+D:\Car Project\MCM\LogicLayer\bin\Debug\LogicLayer.dll
+D:\Car Project\MCM\LogicLayer\bin\Debug\LogicLayer.pdb
+D:\Car Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.dll
+D:\Car Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\Car Project\MCM\LogicLayer\obj\Debug\LogicLayer.dll
+D:\Car Project\MCM\LogicLayer\obj\Debug\LogicLayer.pdb
+D:\Car Project\MCM\LogicLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Car Mechanic Project\MCM\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.csproj.AssemblyReference.cache
+C:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
+C:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Car Mechanic Project\MCM\LogicLayer\obj\Debug\LogicLayer.pdb
