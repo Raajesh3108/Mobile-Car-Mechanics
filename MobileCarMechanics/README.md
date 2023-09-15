@@ -3,9 +3,7 @@ Bootstrap_Metro_Dashboard
 
 A Metro Style Dashboard Template with Twitter Bootstrap
 
-Demo: http://jiji262.github.io/Bootstrap_Metro_Dashboard/
-
-**NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/jiji262) to keep you update with this template.
+**NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/Raajesh3108) to keep you update with this template.
 
 Description
 ----------------------------
@@ -55,7 +53,7 @@ http://retinajs.com
 ## License
 (The MIT License)
 
-Copyright © 2013-2015 @jiji262
+Copyright © 2022-2023 @raajesh3108
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
