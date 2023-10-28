@@ -43,7 +43,3 @@ First, all the mechanics of particular city have to register with their area of 
 3. Operating System: Microsoft Windows,  Android, IOS
 4. Documentation: Microsoft office Word 
 5. Browser:  Internet Explorer, Mozilla Firefox, Google Chrome 
-
-## Conclusion:
-- MCM proposed system is used to overcome all the problems that people face when they want to service their vehicle.
-- By using this system, people are able to choose mechanics as per their choice, ratings and location.
